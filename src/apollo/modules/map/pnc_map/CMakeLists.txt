@@ -13,7 +13,8 @@ add_library(map_route_segments route_segments.cc)
 target_link_libraries(map_route_segments common::proto
                                        map::hdmap
                                        map::pnc_map_path
-                                       routing::routing_gflags)
+                                       routing::routing_gflags
+                                       routing::proto)
 add_library(map::route_segments ALIAS map_route_segments)
 
 
